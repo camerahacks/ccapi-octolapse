@@ -30,6 +30,22 @@ Always add the full path to the scripts below in each one of Octolapse's fields.
 
 First things first. Set your camera's IP address in ```config.py```. You shouldn't have to change any of the other settings, but they are there if you need it.
 
+```python
+# Camera IP Address
+IP = '192.168.1.27'
+
+# Camera port. Default is 8080
+PORT = '8080'
+
+# Protocol. Default is http
+PROTOCOL = 'http'
+
+BASE_URL = PROTOCOL+'://'+IP+':'+PORT
+
+# Turn Auto-focus On/Off during shooting
+AF = False
+```
+
 ## Timelapse Technique
 
 Set the camera to manual exposure and dial in the exposure before starting the timelapse. If the camera is set to any of the automatic exposure modes (Av, Tv, Auto, Etc) the exposure will be ever so lightly different in each frame/picture. This will case the finished timelapse clip to apper to flicker.
