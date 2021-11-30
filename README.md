@@ -1,6 +1,8 @@
 # Octoprint Canon Camera Control API Scripts
 
-This is a set of scripts to create Octolapses with a Canon camera that supports the Camera Control API (CCAPI).
+Although this is a work in progress, the scripts are fully functional.
+
+This is a set of scripts to create Octolapses with a Canon camera that supports the Camera Control API (CCAPI)
 
 You can control your Canon camera wirelessly since CCAPI enabled cameras can be controlled over wifi.
 
@@ -20,7 +22,14 @@ Set the Camera Type to External Camera - Script
 
 ### External Camera Setup - Script
 
-Add the full path to ```ccapi-trigger.py```. In my case it is ```/home/pi/scripts/ccapi-trigger.py```
+Always add the full path to the scripts below in each one of Octolapse's fields. For example, the full path for ```ccapi-trigger.py``` is ```/home/pi/scripts/ccapi-trigger.py```.
 
-This is the script that will send a signal to the camera to trip the shutter.
+```ccapi-connect.py``` stablishes the first connection with the camera.
 
+```ccapi-trigger.py``` sends a signal to trip the shutter on the camera.
+
+First things first. Set your camera's IP address in ```config.py```. You shouldn't have to change any of the other settings, but they are there if you need it.
+
+## Timelapse Technique
+
+Set the camera to manual exposure and dial in the exposure before starting the timelapse. If the camera is set to any of the automatic exposure modes (Av, Tv, Auto, Etc) the exposure will be ever so lightly different in each frame/picture. This will case the finished timelapse clip to apper to flicker.
