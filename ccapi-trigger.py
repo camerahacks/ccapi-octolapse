@@ -9,12 +9,10 @@ import config
 
 def shutter():
 
-    endpoint = '/ccapi/ver100/shooting/control/shutterbutton'
+    endpoint = '/ccapi/ver'+str(config.VERSION)+'/shooting/control/shutterbutton'
 
     param = json.dumps({'af': config.AF})
 
     response = requests.post(config.BASE_URL+endpoint, data=param)
-
-    print(param)
 
 shutter()
