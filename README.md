@@ -12,6 +12,24 @@ Follow the link below for a list of supported cameras and how to enable CCAPI on
 
 [CCAPI How To @ DPHacks.com](https://dphacks.com/how-to-canon-camera-control-api-ccapi/)
 
+Here's a list of compatible cameras (as of December 2021)
+
+| Camera                 | CCAPI v1.1         | CCAPI v1.0         |
+|------------------------|--------------------|--------------------|
+| EOS M50 Mark II        |                    | :heavy_check_mark: |
+| EOS R5                 | :heavy_check_mark: | :heavy_check_mark: |
+| EOS R6                 | :heavy_check_mark: | :heavy_check_mark: |
+| EOS Rebel T8i          |                    | :heavy_check_mark: |
+| EOS 1D X Mark III      | :heavy_check_mark: | :heavy_check_mark: |
+| EOS M200               |                    | :heavy_check_mark: |
+| EOS M6 Mark II         |                    | :heavy_check_mark: |
+| EOS 90D                |                    | :heavy_check_mark: |
+| EOS Rebel SL3          |                    | :heavy_check_mark: |
+| EOS RP                 |                    | :heavy_check_mark: |
+| Powershot SX70 HS      |                    | :heavy_check_mark: |
+| PowerShot G5 X Mark II |                    | :heavy_check_mark: |
+| PowerShot G7 X Mark III|                    | :heavy_check_mark: |
+
 ## Octolapse Setup
 
 Add a new camera in Octolapse config.
@@ -44,6 +62,14 @@ BASE_URL = PROTOCOL+'://'+IP+':'+PORT
 
 # Turn Auto-focus On/Off during shooting
 AF = False
+
+# Liveview options
+LVSIZE = 'small'
+
+DISPLAY = 'off'
+
+# Disconnect camera from Wi-fi after print is complete
+DISCONNECT = True
 ```
 
 ## Timelapse Technique
