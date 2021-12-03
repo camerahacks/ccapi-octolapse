@@ -36,27 +36,27 @@ Here's a list of compatible cameras (as of December 2021)
 
 Add a new camera in Octolapse config.
 
-<img src="img\Octolapse_Setup_Step_1.png" width="50%">
+<img src="img\Octolapse_Setup_Step_1.png" width="80%">
 
-<img src="img\Octolapse_Setup_Step_2.png" width="50%">
+<img src="img\Octolapse_Setup_Step_2.png" width="80%">
 
 ### Basic Settings
 
 Give it a name and a description. Here, I just named it CCAPI. Do not choose a Profile to Import and make sure to select External Camera - Scrip under the Camera Type section.
 
-<img src="img\Octolapse_Setup_Step_3.png" width="50%">
+<img src="img\Octolapse_Setup_Step_3.png" width="80%">
 
 
 ### External Camera Setup - Script
 
 Always add the full path to the scripts below in each one of Octolapse's fields. For example, the full path for ```ccapi-trigger.py``` is ```/home/pi/scripts/ccapi-trigger.py```.
 
-<img src="img\Octolapse_Setup_Step_4.png" width="50%">
+<img src="img\Octolapse_Setup_Step_4.png" width="80%">
 
 
 ### Custom Camera Scripts
 
-<img src="img\Octolapse_Setup_Step_5.png" width="50%">
+<img src="img\Octolapse_Setup_Step_5.png" width="80%">
 
 ```ccapi-connect.py``` Establishes the first connection with the camera.
 
