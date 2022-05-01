@@ -12,3 +12,6 @@ BASE_URL = PROTOCOL+'://'+IP+':'+PORT
 
 # Turn Auto-focus On/Off during shooting
 AF = False
+
+# CCAPI Version
+VERSION = '100'
